@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="js/app.js" defer></script>
+    <script src="js/bubble.js" defer></script>
+    <script src="js/insertion.js" defer></script>
+    <script src="js/merge.js" defer></script>
+    <script src="js/selection.js" defer></script>
+    <script src="js/quick.js" defer></script>
+    <title>Sorting Visualiser</title>
+  </head>
+  <body class="bg-dark">
+    <h1 class="heading">Sorting Visualiser</h1>
+    <nav role="navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="test-left">
+          <button
+            type="button"
+            onclick="gen_bar()"
+            id=""
+            class="btn btn-outline-warning newArray"
+          >
+            New Array
+          </button>
+          </div>
+            <div class="col" id="input">
+                <span id="size"><h5>Size</h5>
+                    <input id="arr_sz" type="range" min="20" max="100" step=10 value=50>
+                </span>
+                <span id="speed"><h5>Speed</h5>
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+        </div>
+        <div class="text-right col gap-2 d-xl-flex justify-content-end">
+          <button
+            type="button"
+            id=""
+            onclick="bubbleSort()"
+            class="btn btn-outline-primary bubbleSort"
+          >
+            Bubble Sort
+          </button>
+          <button
+            type="button"
+            id=""
+            class="btn btn-outline-primary insertionSort"
+          >
+            Insertion Sort
+          </button>
+          <button type="button" id="" class="btn btn-outline-primary mergeSort">
+            Merge Sort
+          </button>
+          <button type="button" id="" class="btn btn-outline-primary quickSort">
+            Quick Sort
+          </button>
+          <button
+            type="button"
+            id=""
+            class="btn btn-outline-primary selectionSort"
+          >
+            Selection Sort
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="bars"></div>
+  </body>
+</html>

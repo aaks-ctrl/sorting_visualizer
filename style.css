@@ -1,0 +1,38 @@
+.heading {
+    text-align: center;
+    color: white;
+}
+#speed{
+    text-align: center;
+    color: white;
+}
+#size{
+    text-align: center;
+    color: white;
+}
+#bars
+{   width: 80%;
+    display: flex;
+    margin:5% 10%;
+    justify-content: space-between;
+    transition: 2s all ease;
+    /* align-items: flex-end; */
+}
+.flex-child
+{   width: 6px;
+    flex: 1 1 0px;
+    float: left;
+    border: 1px solid yellow;
+    background-color: yellow;
+    height: 100%;
+    margin: 1.5px;
+    transition: 0.1s all ease;
+}
+.container-fluid{
+    display: inline-block;
+}
+.col{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
